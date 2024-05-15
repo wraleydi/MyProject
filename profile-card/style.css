@@ -277,7 +277,7 @@ main .skill {
     background: rgb(1,3,5);
     background: linear-gradient(180deg,  rgba(10,52,104,1) 0%, rgb(25, 26, 27) 70%);
     padding-block-start: 5rem;
-    padding-block-end: 3rem;
+    padding-block-end: 6rem;
 }
 
 .skill .title-skill .half-underline::after {
@@ -312,16 +312,47 @@ main .skill {
 }
 
 footer .foot {
+    position: relative;
     background-image: url('assets/thousand\ sunny-foot.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
 }
 
-.my-foot .foot-background {
+footer .foot::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi 50% */
+    z-index: -1;
+}
+
+.foot .my-foot {
+    text-align: center;
+    color: white;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.foot .foot-background {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.705); 
     z-index: -0;
+}
+
+.social-foot ul a {
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+    transition: all ease-in 0.2s ;
+}
+
+.social-foot ul a:hover {
+    color: rgba(10,52,104,1);
 }
