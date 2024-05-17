@@ -335,7 +335,7 @@ footer .foot::before {
     }
 
     .description-info p {
-        max-width: 400px;
+        max-width: 600px;
     }
 
     @media screen and (max-width: 1060px){
@@ -344,7 +344,36 @@ footer .foot::before {
         }
 
         .info tbody tr td {
-            padding-inline: 0;
+            padding-inline: 1rem;
         }
+    }
+}
+
+@media screen and (max-width: 872px){
+    main .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-me .content .my-img {
+        text-align: center;
+    }
+
+    main .description-info {
+        padding-inline-start: 0;
+    }
+
+    .description-info .title-info {
+        margin-inline: auto;
+        flex-direction: column;
+    }
+
+    .description-info p {
+        margin-inline: auto;
+    }
+
+    .description-info .info {
+        text-align: start;
+        margin-inline: auto;
     }
 }
