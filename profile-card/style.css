@@ -70,8 +70,6 @@ main .info-me {
 }
 
 main .content {
-    max-width: 1200px;
-    width: 100%;
     display: flex;
     background: rgb(1,3,5);
     background: linear-gradient(180deg, rgb(25, 26, 27) 30%, rgba(10,52,104,1) 100%); 
@@ -79,6 +77,14 @@ main .content {
     padding-block-start: 6rem;
     margin-block-start: 0rem;
     border-radius: 3rem;
+}
+
+.content .my-img img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-inline: auto;
 }
 
 main .description-info {
@@ -435,5 +441,32 @@ footer .foot::before {
 
     .info tbody tr td {
         margin-block-end: 2rem;
+    }
+}
+
+@media screen and (max-width: 382px){
+    main .content {
+        padding: 2rem;
+    }
+
+    .info-me .content .my-img img {
+        width: 150px;
+    }
+
+    .social ul li a {
+        font-size: 1.2rem;
+    }
+
+    .my-img .social ul li {
+        margin-inline: 0.5rem;
+    }
+
+    .content .description-info h1 .title-info {
+        font-size: 2.4rem;
+    }
+
+    .content .description-info p {
+        font-size: 0.8rem;
+        line-height: 1.3rem
     }
 }
