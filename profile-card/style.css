@@ -97,6 +97,10 @@ main .description-info {
     line-height: 1.7rem;
 }
 
+.title-info .t1 {
+    margin-inline-end: 1rem;
+}
+
 .half-underline {
     position: relative;
     display: inline-block;
@@ -173,8 +177,12 @@ hr.thr {
 .my-edu .edu-title h1 {
     text-align: center;
     padding-block-start: 5rem;
+    font-size: 2.8rem;
 }
 
+.my-edu .edu-title i {
+    font-size: 2.6rem;
+}
 .edu-title h1 .half-underline::after {
     bottom: -0.5rem;
     width: 130%;
@@ -186,10 +194,9 @@ hr.thr {
     flex-wrap: wrap;
     padding: 5rem;
     padding-block-start: 3rem;
-    padding-block-end: 3rem;
     justify-content: space-around;
     text-align: center;
-    padding-block-end: 30rem;
+    padding-block-end: 33rem;
 }
 
 .timeline {
@@ -202,18 +209,13 @@ hr.thr {
     content: '';
     position: absolute;
     width: 5px;
-    height: 60rem;
+    height: 66rem;
     background-color: #bcbcbc;
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -2px;
     z-index: -0;
-}
-
-.timeline-item {
-    position: relative;
-    margin: 2rem 0;
 }
 
 #timeline-item1 {
@@ -254,6 +256,13 @@ hr.thr {
     border-bottom: 15px solid transparent; 
     border-right: 20px solid #00a782;
     z-index: 1; 
+}
+
+#grp1 {
+    top: 21rem; 
+    margin-inline-end: 0;
+    position: relative; 
+    left: 2rem;
 }
 
 .edu-content .group {
@@ -367,6 +376,8 @@ footer .foot::before {
     color: rgba(10,52,104,1);
 }
 
+
+
 @media screen and (max-width: 1160px){
     .info-me .content .my-img img {
         width: 200px;
@@ -382,6 +393,50 @@ footer .foot::before {
 
     .description-info p {
         max-width: 600px;
+    }
+
+    #timeline-item2 {
+        position: relative;
+        top: 37rem; 
+    }
+
+    #timeline-item4 {
+        position: relative;
+        top: 47.5rem; 
+    }
+
+    .edu-content .group {
+        position: relative;
+        right:  6rem;
+    }
+
+    #grp1 {
+        top: 21rem; 
+        margin-inline-end: 0;
+        position: relative; 
+        left: 0.5rem;
+    }
+
+    #grp2 {
+        margin-inline-start: 0; 
+        margin-block-start: 3.5rem; 
+        margin-block-end: 0; 
+        position: relative; 
+        right: 0.5rem;
+    }
+
+    #grp3 {
+        top: 25rem; 
+        margin-block-end: 0; 
+        position: relative; 
+        left: 0.3rem;
+    }
+
+    #grp4 {
+        margin-block-end: 0; 
+        position: relative; 
+        right: 0.3rem; 
+        top: 10rem;
     }
 
     @media screen and (max-width: 1060px){
@@ -452,12 +507,8 @@ footer .foot::before {
         height: 150px;
     }
 
-    .title-img h1 {
-        font-size: 2rem;
-    }
-
     main .content {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     .info-me .content .my-img img {
@@ -476,8 +527,24 @@ footer .foot::before {
         font-size: 2.4rem;
     }
 
+    .info tbody tr td {
+        padding: 0;
+    }
+
+    .title-info .t1 {
+        margin-inline-end: 0;
+    }
+
     .content .description-info p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 1.3rem
+    }
+
+    .education .my-edu .edu-title h1 {
+        font-size: 2rem;
+    }
+
+    .education .my-edu .edu-title i {
+        font-size: 2rem;
     }
 }
