@@ -196,7 +196,7 @@ hr.thr {
     padding-block-start: 3rem;
     justify-content: space-around;
     text-align: center;
-    padding-block-end: 33rem;
+    padding-block-end: 23rem;
 }
 
 .timeline {
@@ -475,17 +475,31 @@ footer .foot::before {
         margin-inline: auto;
     }
 
+    .info tbody tr td {
+        padding-inline-start: 0;
+    }
+
     .edu-content {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-inline: 3rem;
+    }
+
+    .edu-content .group {
+        position: relative;
+        width: 100%;
+        left: -10rem;
+        text-align: start;
     }
 
     .timeline {
         position: relative;
         margin: 0;
         padding: 0;
-        bottom: 20rem;
-        right: 2rem;
+        bottom: 10rem;
+        right: 16rem;
+        margin-block: auto;
     }
 
     #timeline-item3 {
@@ -495,13 +509,65 @@ footer .foot::before {
     }
 
     #timeline-item4 {
+        top: 49rem;
         left: 0.9rem; 
         border-right: none; 
         border-left: 20px solid #00a782; 
     }
+
+    #grp1 {
+        position: relative;
+        top: 0.5rem;
+        margin-block-end: 0;
+    }
+
+    #grp2 {
+        position: relative;
+        top: -0.5rem;
+        left: 0.5rem;
+        margin-block-end: 0;
+    }
+
+    #grp3 {
+        position: relative;
+        top: 4.5rem;
+        left: 0.5rem;
+        margin-block-end: 0;
+    }
+
+    #grp4 {
+        position: relative;
+        top: 9rem;
+        left: 0.5rem;
+        margin-block-end: 0;
+    }
 }
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 563px){
+    .edu-content {
+        padding-block-start: 6rem;
+    }
+
+    .edu-content .group {
+        max-width: 350px;
+        margin-inline-end: 2rem;
+    }
+
+    .timeline {
+        bottom: 10rem;
+        right: 14rem;
+    }
+
+    .edu-content .group h3 {
+        font-size: 1.2rem;
+    }
+
+    .edu-content .group p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 592px){
     main .info-me {
         padding: 2rem ;
     }
