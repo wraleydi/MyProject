@@ -262,7 +262,28 @@ hr.thr {
     top: 21rem; 
     margin-inline-end: 0;
     position: relative; 
-    left: 2rem;
+    left: 0.5rem;
+}
+
+#grp2 {
+    top: 2rem; 
+    margin-inline-end: 0;
+    position: relative; 
+    right: 2rem;
+}
+
+#grp3 {
+    top: 22rem; 
+    margin-inline-end: 0;
+    position: relative; 
+    right: 0.7rem;
+}
+
+#grp4 {
+    top: 7.5rem; 
+    margin-inline-end: 0;
+    position: relative; 
+    right: 0.5rem;
 }
 
 .edu-content .group {
@@ -395,48 +416,16 @@ footer .foot::before {
         max-width: 600px;
     }
 
-    #timeline-item2 {
-        position: relative;
-        top: 37rem; 
-    }
-
-    #timeline-item4 {
-        position: relative;
-        top: 47.5rem; 
-    }
-
-    .edu-content .group {
-        position: relative;
-        right:  6rem;
-    }
-
-    #grp1 {
-        top: 21rem; 
-        margin-inline-end: 0;
-        position: relative; 
-        left: 0.5rem;
-    }
-
-    #grp2 {
-        margin-inline-start: 0; 
-        margin-block-start: 3.5rem; 
-        margin-block-end: 0; 
-        position: relative; 
-        right: 0.5rem;
-    }
-
-    #grp3 {
-        top: 25rem; 
-        margin-block-end: 0; 
-        position: relative; 
-        left: 0.3rem;
-    }
-
-    #grp4 {
-        margin-block-end: 0; 
-        position: relative; 
-        right: 0.3rem; 
-        top: 10rem;
+    @media screen and (max-width: 962px){
+        #timeline-item2 {
+            position: relative;
+            top: 37rem; 
+        }
+    
+        #timeline-item4 {
+            position: relative;
+            top: 47rem; 
+        }
     }
 
     @media screen and (max-width: 1060px){
@@ -447,10 +436,18 @@ footer .foot::before {
         .info tbody tr td {
             padding-inline: 1rem;
         }
+
+        .edu-content .group h3 {
+            font-size: 1.5rem;
+        }
+
+        .edu-content .group p {
+            font-size: 0.9rem;
+        }
     }
 }
 
-@media screen and (max-width: 872px){
+@media screen and (max-width: 877px){
     main .content {
         flex-direction: column;
         text-align: center;
@@ -476,6 +473,31 @@ footer .foot::before {
     .description-info .info {
         text-align: start;
         margin-inline: auto;
+    }
+
+    .edu-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        bottom: 20rem;
+        right: 2rem;
+    }
+
+    #timeline-item3 {
+        left: 0.9rem; 
+        border-right: none; 
+        border-left: 20px solid #00a782; 
+    }
+
+    #timeline-item4 {
+        left: 0.9rem; 
+        border-right: none; 
+        border-left: 20px solid #00a782; 
     }
 }
 
