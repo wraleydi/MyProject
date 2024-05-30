@@ -191,6 +191,7 @@ hr.thr {
 
 ul.timeline {
     margin: 0;
+    margin-block-start: 6rem;
     list-style: none;
     padding: 0;
 }
@@ -249,10 +250,14 @@ ul.timeline > li::after {
 
 .timeline-item h3 {
     font-size: 1rem;
+    opacity: 0.8;
     margin: 0;
+    color: #13243a;
 }
 
 .timeline-item h2 {
+    font-family: 'Poppins', 'Sedan', sans-serif;
+    color: #00a782;
     margin: 0;
 }
 
@@ -271,6 +276,7 @@ main .skill {
 
 .skill .content-skill {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     padding: 3rem;
