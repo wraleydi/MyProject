@@ -193,7 +193,7 @@ ul.timeline {
     margin: 0;
     margin-block-start: 6rem;
     list-style: none;
-    padding: 0;
+    padding: 0 3rem;
 }
 
 ul.timeline > li {
@@ -221,8 +221,8 @@ ul.timeline > li::after {
     content: "";
     position: absolute;
     left: 0px;
-    top: 0;
-    height: 250px;
+    top: -30%;
+    height: 310px;
     width: 5px; 
     background-color: rgb(255, 255, 255); 
     z-index: -0;
@@ -239,7 +239,7 @@ ul.timeline > li::after {
     flex: 1;
     background-color: white;
     padding: 2rem;
-    margin-inline-start: 3rem;
+    margin-inline-start: 2rem;
     border-radius: 2rem;
     border-left: 5px solid #00a782;
 }
@@ -426,6 +426,25 @@ footer .foot::before {
 
     .info tbody tr td {
         margin-block-end: 2rem;
+    }
+
+    ul.timeline {
+        padding: 0 2rem;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+        margin: 0;
+    }
+
+    .timeline-content h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 367px){
+    .timeline-content {
+        padding: 1rem;
     }
 }
 
