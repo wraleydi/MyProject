@@ -23,45 +23,44 @@ header, main, footer {
 }
 
 header .head {
-    display: flex;
     position: relative;
     height: 500px;
-    background-image: url('assets/thousand sunny.jpg');
+    background-image: url('assets/thousand\ sunny.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -0;
+    z-index: 1;
 }
 
-.header-background {
+header .head::before {
+    content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.705); 
-    z-index: -0; 
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: -1;
+}
+
+.title-img {
+    padding-inline: auto;
+    padding-block-start: 6rem;
 }
 
 .title-img img {
     display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(60%);
-    width: 200px; 
-    height: 200px; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-inline: auto;
     border-radius: 50%;
     border: 3px solid #fff;
-    z-index: 999999;
 }
 
 .title-img h1 {
-    display: flex;
-    position: absolute;
     color: white;
     bottom: 7rem; 
-    left: 50%;
-    transform: translateX(-50%) translateY(50%);
-    width: 600px; 
-    justify-content: center;
-    z-index: 999999;
+    text-align: center;
     font-size: 2.8rem;
 }
 
@@ -179,7 +178,7 @@ hr.thr {
 
 .thr {
     animation: expandContract 4s infinite;
-    animation-delay: 0s;
+    animation-delay: 2s;
 }
 
 .sc {
@@ -189,7 +188,7 @@ hr.thr {
 
 hr {
     animation: expandContract 4s infinite;
-    animation-delay: 2s;
+    animation-delay: 0s;
 }
 
 .education {
@@ -316,8 +315,6 @@ main .skill {
     background: linear-gradient(180deg,  rgba(10,52,104,1) -20%, rgb(25, 26, 27) 90%);
     border-radius: 10%;
     color: white;
-    transition: all ease-in 0.2s;
-    cursor: pointer;
 }
 
 .group-skill {
@@ -350,10 +347,6 @@ main .skill {
     animation-delay: 1s;
 }
 
-.group-skill:hover {
-    box-shadow: 10px 10px 10px black;
-}
-
 .group-skill h3 {
     font-family: 'Poppins', 'Sedan', sans-serif;
 }
@@ -383,14 +376,6 @@ footer .foot::before {
     color: white;
     z-index: -1;
     opacity: 0.8;
-}
-
-.foot .foot-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.705); 
-    z-index: -0;
 }
 
 .social-foot ul a {
@@ -498,8 +483,12 @@ footer .foot::before {
         font-size: 1.2rem;
     }
 
+    main .skill {
+        padding: 2rem;
+    }
+
     .skill .content-skill {
-        padding-inline: 2rem;
+        padding-inline: 0rem;
     }
 
     .content-skill .group-skill {
@@ -515,7 +504,6 @@ footer .foot::before {
 
 @media screen and (max-width: 382px){
     .title-img img {
-        transform: translateX(-50%) translateY(120%);
         width: 150px;
         height: 150px;
     }
@@ -526,6 +514,7 @@ footer .foot::before {
 
     main .content {
         padding: 1.5rem;
+        padding-block-start: 9rem;
     }
 
     .info-me .content .my-img img {
@@ -567,5 +556,19 @@ footer .foot::before {
 
     .foot .my-foot .thx {
         padding-inline: 1rem;
+    }
+
+    .skill .title-skill h1 span {
+        font-size: 2rem;
+    }
+
+    .skill .title-skill h1 i {
+        font-size: 2rem;
+    }
+
+    @media  screen and (max-width: 344px) {
+        .head .title-img h1 {
+            font-size: 1.8rem;
+        }
     }
 }
