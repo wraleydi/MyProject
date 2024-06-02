@@ -6,3 +6,6 @@ Inilah adalah project untuk membuat profile-card yang berisi informasi tentang s
 
 
 ![Screenshot (71)](https://github.com/wraleydi/MyProject/assets/166751493/1d623652-4f7a-4a6c-928a-f50fc19c8926)
+
+
+![Screenshot (72)](https://github.com/wraleydi/MyProject/assets/166751493/5e85b710-7ef1-4c48-864b-ffa1b8df7b5b)
